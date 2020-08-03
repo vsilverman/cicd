@@ -1,1 +1,1 @@
-# This repo is for veryfying different tools and configurations for CI/CD related solutions
+# Jenkins as CI/CD tool
