@@ -27,4 +27,6 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 # skip setup wizard, see: https://github.com/jenkinsci/docker/blob/master/README.md#script-usage
 # RUN echo 2.235.1 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 
+ENV myDemo="CDF meetup"
+
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
