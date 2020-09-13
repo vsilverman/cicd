@@ -5,14 +5,14 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'building...'
+        echo 'building ...'
         sh 'echo myDemo = $myDemo'
       }
     }
 
     stage('Test') {
       steps {
-        echo 'testing...'
+        echo 'testing ...'
       }
     }
 
