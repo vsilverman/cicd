@@ -5,7 +5,6 @@ pipeline {
       steps {
         echo 'building...'
         sh 'echo myDemo = $myDemo'
-        sh './get-plugins.sh'
       }
     }
 
