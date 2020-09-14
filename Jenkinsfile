@@ -1,11 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    dockerfile true
+  }
   stages {
     stage('Build') {
       steps {
         echo 'building...'
         sh 'echo myDemo = $myDemo'
-        sh './get-plugins.sh'
       }
     }
 
