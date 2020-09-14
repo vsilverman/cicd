@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    dockerfile true
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
@@ -11,8 +9,21 @@ pipeline {
     }
 
     stage('Test') {
-      steps {
-        echo 'testing ...'
+      parallel {
+        agent { 
+          docker 'openjdk:8-jdk-alpine' 
+        }
+        steps {
+          echo 'testing ...'
+          sh 'java -version'
+        }
+        agent { 
+          docker 'openjdk:11-jdk-alpine' 
+        }
+        steps {
+          echo 'testing ...'
+          sh 'java -version'
+        }
       }
     }
 
