@@ -21,11 +21,17 @@ USER jenkins
 COPY plugins.txt  /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
+ENV JENKINS_USER demo
+ENV JENKINS_PASS demo
+
+# allows to skip Jenkins setup wizard
+ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
+
 # COPY jenkins.yaml /var/jenkins_home/casc_configs/
 # ENV CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
 
 # skip setup wizard, see: https://github.com/jenkinsci/docker/blob/master/README.md#script-usage
-RUN echo 2.235.1 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
+# RUN echo 2.235.1 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 
 # ENV myDemo="CDF meetup"
 

@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'building...'
-        sh 'echo myDemo = $myDemo'
       }
     }
 
