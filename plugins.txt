@@ -10,10 +10,10 @@ docker-commons:1.17
 workflow-cps-global-lib:2.17
 display-url-api:2.3.3
 pipeline-graph-analysis:1.10
-ldap:1.24
+ldap:1.26
 handy-uri-templates-2-api:2.1.8-1.0
 blueocean-jwt:1.23.2
-snakeyaml-api:1.26.4
+snakeyaml-api:1.27.0
 pubsub-light:1.13
 scm-api:2.6.3
 pipeline-build-step:2.13
@@ -34,12 +34,11 @@ gradle:1.36
 apache-httpcomponents-client-4-api:4.5.10-2.0
 structs:1.20
 bouncycastle-api:2.18
-matrix-auth:2.6.2
+matrix-auth:2.6.3
 pipeline-model-extensions:1.7.2
 plain-credentials:1.7
 blueocean-rest:1.23.2
 workflow-scm-step:2.11
-subversion:2.13.1
 blueocean-rest-impl:1.23.2
 github-branch-source:2.9.0
 pipeline-github-lib:1.0
@@ -48,7 +47,7 @@ jenkins-design-language:1.23.2
 workflow-support:3.5
 antisamy-markup-formatter:2.1
 command-launcher:1.4
-git:4.4.1
+git:4.4.2
 blueocean-personalization:1.23.2
 authentication-tokens:1.4
 ws-cleanup:0.38
@@ -95,8 +94,8 @@ lockable-resources:2.8
 workflow-api:2.40
 durable-task:1.35
 blueocean-display-url:2.4.0
-workflow-basic-steps:2.20
-workflow-durable-task-step:2.35
+workflow-basic-steps:2.21
+workflow-durable-task-step:2.36
 blueocean-dashboard:1.23.2
 jackson2-api:2.11.2
 jdk-tool:1.4
@@ -105,5 +104,4 @@ branch-api:2.6.0
 mercurial:2.10
 momentjs:1.1.1
 pipeline-input-step:2.12
-mapdb-api:1.0.9.0
 pipeline-stage-view:2.15
