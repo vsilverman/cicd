@@ -2,20 +2,20 @@ pipeline {
   agent any
   stages {
     stage('Build') {
+        agent {
+        docker {
+            image 'maven:3-alpine'
+        }
+    }
       steps {
         echo 'building...'
+        sh 'mvn -v'
       }
     }
 
     stage('Test') {
-      agent { 
-        docker {
-          image 'openjdk:7-jdk-alpine'
-        } 
-      }
       steps {
         echo 'testing ...'
-        sh 'java -version'
       }
     }
 
