@@ -27,12 +27,13 @@ ENV JENKINS_PASS demo
 # allows to skip Jenkins setup wizard
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 
+# use this for creating default admin user
+COPY default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
+
 # COPY jenkins.yaml /var/jenkins_home/casc_configs/
 # ENV CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
 
 # skip setup wizard, see: https://github.com/jenkinsci/docker/blob/master/README.md#script-usage
 # RUN echo 2.235.1 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
-
-# ENV myDemo="CDF meetup"
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
