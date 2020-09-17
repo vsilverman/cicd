@@ -2,10 +2,10 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-        agent {
+      agent {
         docker {
-            image 'maven:3-alpine'
-        }
+          image 'maven:3-alpine'
+      }
     }
       steps {
         echo 'building...'
