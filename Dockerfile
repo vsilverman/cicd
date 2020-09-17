@@ -18,17 +18,18 @@ RUN apt-get update && apt-get install -y docker-ce-cli
 
 USER jenkins
 
+# auto install list of plugins from the file
 COPY plugins.txt  /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
+# use this for creating default admin user
 ENV JENKINS_USER admin
 ENV JENKINS_PASS admin
 
+COPY default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
+
 # allows to skip Jenkins setup wizard
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
-
-# use this for creating default admin user
-COPY default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 # COPY jenkins.yaml /var/jenkins_home/casc_configs/
 # ENV CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/jenkins.yaml
