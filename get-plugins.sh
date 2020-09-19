@@ -1,4 +1,4 @@
-#!/bin/bash
+    #!/bin/bash
 
 # this script gets the list of installed plugins from running jenkins ci server
 
