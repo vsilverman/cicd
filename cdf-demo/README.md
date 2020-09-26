@@ -1,10 +1,12 @@
 # How-To create Declarative Pipeline with official Jenkins Docker image
 
-This file describes the simplest way to start official Jenkins Docker image and create Jenkinsfie with Blue Ocen plugin
+This file describes the simplest way to start official Jenkins Docker image and create Jenkinsfie with Blue Ocean plugin.
+
+> **_NOTE:_** Below content is intended for demo purposes only, do not use it in production environment.
 
 ## Prerequisites
 
-- You have forked this directory to your GitHub account and cloned it to you computer
+- You have forked this repo to your GitHub account and cloned it to you computer
 
 - You have created and saved a Github personal access token
 
