@@ -45,7 +45,7 @@ This file describes the simplest way to start official Jenkins Docker image and 
 
 - Enter your personal GitHub token value, select your Github account and the name of this repo
 
-- Edit pipeline: create build, test, deploy stages similar to the content of the Jenkinsfile in this repo
+- Edit pipeline: create build, test, deploy stages similar to the [Jenkinsfile](https://github.com/vsilverman/cicd/tree/master/cdf-demo) in the current folder.
 
 - Save the Jenkinsfile in the master branch and root folder of this repo
 
