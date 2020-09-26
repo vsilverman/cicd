@@ -4,7 +4,7 @@ This file describes the process of enabling docker agents inside declarative pip
 
 ## Prerequisites
 
-You had followed the process, described in the master branch of this repo, and are running official Jenkins Docker image
+You had followed the process, described in the [master branch of this repo](https://github.com/vsilverman/cicd/tree/master/cdf-demo), and are running official Jenkins Docker image
 
 ## Steps
 
