@@ -26,7 +26,7 @@ You had followed the process, described in the [master branch of this repo](http
 
             make build run
 
-> _TIP:_ As outlined in [this article](http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/) using socket solution in the `docker run...` command provides a good alternative to traditional Docker-in-Docker containers and allows to avoid associated with those containers nesting side effects.
+> **_NOTE:_** As outlined in [this article](http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/) using socket solution in the `docker run ...` command provides a good alternative to traditional Docker-in-Docker containers, allowing to avoid associated with those containers nesting side effects.
 
 - Go to [your Jenkins host](http://localhost:8080), running customized Jenkins. Verify that although setup wizard is bypassed all plugins are installed and admin user is created.
 
