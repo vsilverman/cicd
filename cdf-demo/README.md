@@ -12,7 +12,7 @@ You had followed the process, described in the [master branch of this repo](http
 
 - Go to [your Jenkins host](http://localhost:8080).
 
-- Using Blue Ocean pipeline editor add "maven:3-alpine" docker agent to the "Build" stage, as in Jenkinsfile of the current folder.
+- Using Blue Ocean pipeline editor add "maven:3-alpine" docker agent to the "Build" stage, as in [Jenkinsfile](https://github.com/vsilverman/cicd/blob/docker-agent/cdf-demo/Jenkinsfile) of the current folder.
 
 - Save modified pipeline in the root folder of this Github branch.  Verify that running of the modified pipeline cannot be completed successfully.
 
@@ -26,6 +26,10 @@ You had followed the process, described in the [master branch of this repo](http
 
             make build run
 
+> _TIP:_ As outlined in [this article](http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/) using socket solution in the `docker run...` command provides a good alternative to traditional Docker-in-Docker containers and allows to avoid associated with those containers nesting side effects.
+
 - Go to [your Jenkins host](http://localhost:8080), running customized Jenkins. Verify that although setup wizard is bypassed all plugins are installed and admin user is created.
 
 - Using Blue Ocean try to create new pipeline in the curent repo.  Blue Ocean will discover existing Jenkinsfile in the root folders of Github branches and will start executing them. Verify that pipelines executions in all branches had completed successfully.
+
+- Now you can create more complex multibranch pipeline, having more stages in it.  As an example you can open and run [Simple Java Maven App](https://github.com/vsilverman/simple-java-maven-app) or even better your fork of it. Verify that running of this pipeline in all branches had also completed successfully.
