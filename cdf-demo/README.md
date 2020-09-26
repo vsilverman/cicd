@@ -1,6 +1,8 @@
 # How-To modify official Jenkins Docker image to enable ephemeral docker agents in the Jenkinsfile
 
-This file describes the process of enabling docker agents inside declarative pipelines by cusomizing official Jenkins Docker image
+This file describes the process of enabling docker agents inside declarative pipelines by cusomizing official Jenkins Docker image.
+
+> **_NOTE:_** Below content is intended for demo purposes only, do not use it in production environment.
 
 ## Prerequisites
 
