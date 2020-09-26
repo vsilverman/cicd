@@ -49,4 +49,4 @@ This file describes the simplest way to start official Jenkins Docker image and 
 
 - After Jenkinsfile is editted and saved it should be executed without any errors.
 
-- For further instructions on editting your Jenkinsfile switch to the docker-agent branch of this repo.
+- Switch to the docker-agent branch of this repo for [further instructions](https://github.com/vsilverman/cicd/tree/docker-agent/cdf-demo) on editting your Jenkinsfile .
